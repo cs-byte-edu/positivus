@@ -1,0 +1,32 @@
+{
+  "name": "started-vite-template",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
+  },
+  "browserslist": [
+    "cover 99.5%"
+  ],
+  "devDependencies": {
+    "autoprefixer": "^10.4.21",
+    "cssnano": "^7.0.6",
+    "fast-glob": "^3.3.3",
+    "gh-pages": "^6.3.0",
+    "imagemin": "^9.0.1",
+    "imagemin-webp": "^8.0.0",
+    "postcss": "^8.5.3",
+    "postcss-sort-media-queries": "^5.2.0",
+    "sharp": "^0.33.5",
+    "svgo": "^3.3.2",
+    "tailwindcss": "^3.4.17",
+    "vite": "^6.2.1",
+    "vite-plugin-html-minify": "^1.0.0",
+    "vite-plugin-image-optimizer": "^1.1.8"
+  }
+}
