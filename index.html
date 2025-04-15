@@ -13,7 +13,7 @@
 </head>
 
 <body>
-  <div class="page font-['Space_Grotesk']">
+  <div class="font-['Space_Grotesk'] text-base lg:text-[1.125rem]">
     <header class="max-[1023px]:shadow-md">
       <div
         class="page-box flex items-center justify-between text-[1.125rem] lg:text-[1.25rem] px-[20px] py-[30px] lg:pt-[60px] lg:pb-[70px]">
@@ -22,7 +22,7 @@
         <div
           class="nav-box flex flex-col lg:flex-row px-4 pt-8 pb-5 lg:py-0 lg:px-0 lg:gap-10 h-full max-[1023px]:fixed max-[1023px]:top-0 max-[1023px]:left-[-100%] w-0 lg:w-auto max-[1023px]:shadow-lg bg-white z-[101] transition-all duration-300 ease-in">
           <nav class="flex flex-col lg:flex-row lg:items-center font-medium">
-            <button
+            <button type="button" aria-label="Close mobile menu"
               class="btn-close absolute top-4 right-4 flex flex-col items-center justify-center w-6 h-4 lg:hidden">
               <div class="h-0.5 w-full bg-black transform rotate-45" aria-hidden="true">
               </div>
@@ -53,12 +53,13 @@
               </li>
             </ul>
           </nav>
-          <button
+          <button type="button" aria-label="Request a project estimate"
             class="py-[12px] px-[20px] max-[1023px]:mt-[12px] lg:py-[20px] lg:px-[35px] border border-[var(--c-dark)] rounded-[14px] hover:bg-[var(--c-green)] hover:before:transition-all hover:text-var(--c-dark)">
             Request a quote</button>
         </div>
         <!-- Burger button start -->
-        <button class="btn-toggle flex flex-col items-center justify-center w-6 h-4 lg:hidden">
+        <button type="button" aria-label="Open mobile menu"
+          class="btn-toggle flex flex-col items-center justify-center w-6 h-4 lg:hidden">
           <div class="h-0.5 w-full bg-black" aria-hidden="true">
           </div>
           <div class="h-0.5 w-full bg-black my-1" aria-hidden="true"></div>
@@ -81,7 +82,7 @@
             a range
             of services including
             SEO, PPC, social media marketing, and content creation.</p>
-          <button
+          <button type="button" aria-label="Book a free consultation with our expert"
             class="bg-[var(--c-dark)] text-white leading-[1.4em] py-[20px] px-[35px] rounded-[14px] border border-transparent hover:bg-white hover:text-[var(--c-dark)] hover:border-[var(--c-dark)] transition w-full max-w-[332px] lg:w-auto">
             Book a consultation
           </button>
@@ -253,7 +254,7 @@
           <p>Contact us today to learn more about how our digital marketing services can help your business grow
             and
             succeed online.</p>
-          <button
+          <button type="button" Get your free project proposal"
             class="bg-[var(--c-dark)] text-white leading-[1.4em] py-[20px] px-[35px] rounded-[14px] border border-transparent hover:bg-white hover:text-[var(--c-dark)] hover:border-[var(--c-dark)] transition w-full max-w-[390px] lg:w-auto">Get
             your free proposal</button>
           <img class="absolute top-[-20px] right-[10.88%] hidden lg:block" src="/src/img/cta.svg" alt="cta" width="359"
@@ -767,14 +768,14 @@
 
           </div>
           <div class="absolute left-0 right-0 bottom-[68px] flex items-center justify-center gap-[30px] xl:gap-[190px]">
-            <button class="btn-prev">
+            <button type="button" aria-label="Previous slide" class="btn-prev">
               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none">
                 <path fill="#fff"
                   d="M22 13.5a1.5 1.5 0 0 0 0-3v3ZM.94 10.94a1.5 1.5 0 0 0 0 2.12l9.545 9.547a1.5 1.5 0 1 0 2.122-2.122L4.12 12l8.486-8.485a1.5 1.5 0 1 0-2.122-2.122L.94 10.94ZM22 10.5H2v3h20v-3Z" />
               </svg>
             </button>
             <div id="dots" class="flex gap-[20px]"></div>
-            <button class="btn-next">
+            <button type="button" aria-label="Next slide" class="btn-next">
               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none">
                 <path fill="#fff"
                   d="M2 10.5a1.5 1.5 0 0 0 0 3v-3Zm21.06 2.56a1.5 1.5 0 0 0 0-2.12l-9.545-9.547a1.5 1.5 0 1 0-2.122 2.122L19.88 12l-8.486 8.485a1.5 1.5 0 1 0 2.122 2.122l9.546-9.546ZM2 13.5h20v-3H2v3Z" />
@@ -830,7 +831,7 @@
               <textarea placeholder="Email"
                 class="w-full min-h-[192px] resize-y overflow-auto rounded-[14px] border border-black px-[30px] py-[18px]"></textarea>
             </label>
-            <button type="submit"
+            <button type="submit" aria-label="Send your message"
               class="bg-black text-white text-xl w-full p-4 border border-black hover:bg-white hover:text-black cursor-pointer rounded-[14px] transition">Send
               Message</button>
           </div>
@@ -847,7 +848,7 @@
 
           <div class="flex flex-col md:flex-row md:justify-between lg:order-1 gap-[40px] items-center max-md:pb-[40px]">
             <a href="#">
-              <img src=".//src/img/logo-white.svg" alt="logo positivus" width="144" height="24">
+              <img src="./src/img/logo-white.svg" alt="logo positivus" width="144" height="24">
             </a>
 
             <!-- Footer menu -->
@@ -886,7 +887,7 @@
               class="md:flex-[1_1_60%] flex flex-col lg:flex-row lg:items-center max-md:max-w-[467px] gap-[20px] p-[30px] lg:p-[58px_40px] bg-[var(--c-dark-500)]">
               <input type="text" placeholder="Email"
                 class="max-lg:w-full h-[66px] px-[24px] rounded-[14px] bg-transparent border border-white">
-              <button
+              <button type="button" aria-label="Subscribe to newsletter"
                 class="p-[20px] bg-[var(--c-green)] text-center text-[1.25rem] text-black leading-[1.4em] rounded-[14px] hover:bg-black hover:text-[var(--c-green)] cursor-pointer">Subscribe
                 to
                 news</button>

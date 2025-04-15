@@ -1,14 +1,5 @@
 @tailwind base;
 @tailwind components;
-
-.box {
-  max-width: 1270px;
-  padding-right: 15px;
-  padding-left: 15px;
-  margin-right: auto;
-  margin-left: auto;
-}
-
 @tailwind utilities;
 
 :root {
@@ -28,6 +19,14 @@
 
   --gradient-light-right: linear-gradient(to right, transparent, white);
   --gradient-light-left: linear-gradient(to right, white, transparent);
+}
+
+.box {
+  max-width: 1270px;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 h1,
@@ -52,10 +51,6 @@ h4,
 .h4 {
   font-size: 1.125rem;
   font-weight: 500;
-}
-
-.page {
-  font-size: 1rem;
 }
 
 .nav-box.active {
@@ -259,10 +254,6 @@ h4,
   h4,
   .h4 {
     font-size: 1.25rem;
-  }
-
-  .page {
-    font-size: 1.125rem;
   }
 
   .bg-service {
