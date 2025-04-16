@@ -64,7 +64,7 @@ class Carousel {
     this.prevBtn.classList.toggle("btn-disabled", this.currentIndex === 0);
     this.nextBtn.classList.toggle(
       "btn-disabled",
-      this.currentIndex === this.totalSlides - 1,
+      this.currentIndex === this.totalSlides - 1
     );
   }
 
@@ -124,13 +124,13 @@ document.addEventListener("DOMContentLoaded", () => {
 
   if (toggleBtn && navBox && overlay) {
     addSafeEvent(".btn-toggle", "click", () =>
-      openMenu(toggleBtn, navBox, overlay),
+      openMenu(toggleBtn, navBox, overlay)
     );
     addSafeEvent(".btn-close", "click", () =>
-      closeMenu(toggleBtn, navBox, overlay),
+      closeMenu(toggleBtn, navBox, overlay)
     );
     addSafeEvent(".overlay", "click", () =>
-      closeMenu(toggleBtn, navBox, overlay),
+      closeMenu(toggleBtn, navBox, overlay)
     );
   }
 
@@ -140,7 +140,7 @@ document.addEventListener("DOMContentLoaded", () => {
     function () {
       this.classList.toggle("active");
     },
-    true,
+    true
   );
 
   const menuItems = document.querySelectorAll(".navbar-menu");
@@ -153,7 +153,7 @@ document.addEventListener("DOMContentLoaded", () => {
       ".navbar-burger, .navbar-close, .navbar-backdrop",
       "click",
       toggleMenus,
-      true,
+      true
     );
   }
   const logos = document.querySelector(".logos");

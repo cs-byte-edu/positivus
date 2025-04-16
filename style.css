@@ -21,41 +21,46 @@
   --gradient-light-left: linear-gradient(to right, white, transparent);
 }
 
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-weight: 500;
+  line-height: 1.25em;
+}
+
+h1,
+.h1 {
+  font-size: 2.6875rem;
+}
+
+h2,
+.h2 {
+  font-size: 2.25rem;
+}
+
+h3,
+.h3 {
+  font-size: 1.625rem;
+}
+
+h4,
+.h4 {
+  font-size: 1.125rem;
+}
+
+span {
+  display: inline-block;
+}
+
 .box {
   max-width: 1270px;
   padding-right: 15px;
   padding-left: 15px;
   margin-right: auto;
   margin-left: auto;
-}
-
-h1,
-.h1 {
-  font-size: 2.6875rem;
-  font-weight: 500;
-}
-
-h2,
-.h2 {
-  font-size: 2.25rem;
-  font-weight: 500;
-}
-
-h3,
-.h3 {
-  font-size: 1.625rem;
-  font-weight: 500;
-}
-
-h4,
-.h4 {
-  font-size: 1.125rem;
-  font-weight: 500;
-}
-
-.nav-box.active {
-  left: 0;
-  width: 320px;
+  overflow: hidden;
 }
 
 .bg-service {
@@ -75,22 +80,22 @@ h4,
 }
 
 .bg-service_marketing {
-  background-image: url("/src/img/bg-marketing-2x.png");
+  background-image: url("/src/img/bg-marketing.svg");
   background-size: 127px auto;
 }
 
 .bg-service_email {
-  background-image: url("/src/img/bg-email-2x.png");
+  background-image: url("/src/img/bg-email.svg");
   background-size: auto 160px;
 }
 
 .bg-service_content {
-  background-image: url("/src/img/bg-content-2x.png");
+  background-image: url("/src/img/bg-content.svg");
   background-size: 138px auto;
 }
 
 .bg-service_analytics {
-  background-image: url("/src/img/bg-analytics-2x.png");
+  background-image: url("/src/img/bg-analytics.svg");
   background-size: 157px auto;
 }
 
